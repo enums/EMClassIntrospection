@@ -5,6 +5,6 @@
       location = "container:Example/EMClassIntrospectionExample/EMClassIntrospectionExample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:EMClassIntrospection.xcodeproj">
+      location = "group:EMClassIntrospection/EMClassIntrospection.xcodeproj">
    </FileRef>
 </Workspace>

@@ -146,9 +146,6 @@
         }
     }
     free(protocols);
-    for (int i = 0; i < 4; i++) {
-        free(method[i]);
-    }
 }
 
 + (void)pInstanceMethod
