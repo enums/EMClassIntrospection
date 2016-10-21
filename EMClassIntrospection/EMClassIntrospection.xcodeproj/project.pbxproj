@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5608A02F1DB8EFA8003E738F /* EMClassIntrospection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5608A02D1DB8EFA8003E738F /* EMClassIntrospection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5608A0381DB8EFF5003E738F /* EMCI.h in Headers */ = {isa = PBXBuildFile; fileRef = 5608A0361DB8EFF5003E738F /* EMCI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5608A0391DB8EFF5003E738F /* EMCI.m in Sources */ = {isa = PBXBuildFile; fileRef = 5608A0371DB8EFF5003E738F /* EMCI.m */; };
+		5608A0C41DB9A76A003E738F /* EMCI.h in Headers */ = {isa = PBXBuildFile; fileRef = 5608A0C21DB9A76A003E738F /* EMCI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5608A0C51DB9A76A003E738F /* EMCI.m in Sources */ = {isa = PBXBuildFile; fileRef = 5608A0C31DB9A76A003E738F /* EMCI.m */; };
+		5608A0C71DB9A7F1003E738F /* EMClassIntrospection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5608A0C61DB9A7F1003E738F /* EMClassIntrospection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5608A02A1DB8EFA8003E738F /* EMClassIntrospection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMClassIntrospection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5608A02D1DB8EFA8003E738F /* EMClassIntrospection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMClassIntrospection.h; sourceTree = "<group>"; };
 		5608A02E1DB8EFA8003E738F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5608A0361DB8EFF5003E738F /* EMCI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMCI.h; path = EMClassIntrospection/EMCI.h; sourceTree = "<group>"; };
-		5608A0371DB8EFF5003E738F /* EMCI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMCI.m; path = EMClassIntrospection/EMCI.m; sourceTree = "<group>"; };
+		5608A0C21DB9A76A003E738F /* EMCI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCI.h; sourceTree = "<group>"; };
+		5608A0C31DB9A76A003E738F /* EMCI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCI.m; sourceTree = "<group>"; };
+		5608A0C61DB9A7F1003E738F /* EMClassIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClassIntrospection.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 		5608A02C1DB8EFA8003E738F /* EMClassIntrospection */ = {
 			isa = PBXGroup;
 			children = (
-				5608A02D1DB8EFA8003E738F /* EMClassIntrospection.h */,
+				5608A0C61DB9A7F1003E738F /* EMClassIntrospection.h */,
 				5608A02E1DB8EFA8003E738F /* Info.plist */,
 			);
 			path = EMClassIntrospection;
@@ -60,8 +60,8 @@
 		5608A0351DB8EFED003E738F /* EMCI */ = {
 			isa = PBXGroup;
 			children = (
-				5608A0361DB8EFF5003E738F /* EMCI.h */,
-				5608A0371DB8EFF5003E738F /* EMCI.m */,
+				5608A0C21DB9A76A003E738F /* EMCI.h */,
+				5608A0C31DB9A76A003E738F /* EMCI.m */,
 			);
 			name = EMCI;
 			sourceTree = "<group>";
@@ -73,8 +73,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5608A0381DB8EFF5003E738F /* EMCI.h in Headers */,
-				5608A02F1DB8EFA8003E738F /* EMClassIntrospection.h in Headers */,
+				5608A0C71DB9A7F1003E738F /* EMClassIntrospection.h in Headers */,
+				5608A0C41DB9A76A003E738F /* EMCI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5608A0391DB8EFF5003E738F /* EMCI.m in Sources */,
+				5608A0C51DB9A76A003E738F /* EMCI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +259,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = EMClassIntrospection/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -278,7 +278,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = EMClassIntrospection/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
