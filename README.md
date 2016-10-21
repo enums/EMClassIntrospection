@@ -7,10 +7,11 @@ A tool for runtime which can help us to explore some interesting things.
 
 
 # Integration
-Use cocoaPods like this:
+Use cocoapods like this (Just support iOS):
 ```C
 pod `EMClassIntrospection`
 ```
+Or add `EMCI.h` & `EMCI.m` to your project. It also works on macOS & watchOS.
 
 # Usage
 ## Example
